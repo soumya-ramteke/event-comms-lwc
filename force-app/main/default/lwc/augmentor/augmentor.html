@@ -11,6 +11,13 @@
           onchange={handleStartChange}
         >
         </lightning-input>
+        <!-- button to bump up the count by one million -->
+        <lightning-button
+          class="slds-var-p-vertical_xx-small"
+          label="Add 1m To Counter"
+          onclick={handleMaximizeCounter}
+        >
+        </lightning-button>
       </lightning-layout-item>
     </lightning-layout>
     <c-numerator class="slds-show slds-is-relative" counter={startCounter}>
